@@ -59,6 +59,6 @@ app.post("/api/characters", jsonParser, (req, res) => {
 });
 
 // listener
-app.listen(PORT, function() {
+app.listen(process.env.PORT || PORT, function() {
   console.log(`App listening on PORT ${PORT}`);
 });
